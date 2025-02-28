@@ -1,15 +1,15 @@
 [submodule "Operation_Planning_and_Control-projects"]
    path = Operation_Planning_and_Control-projects
-   url = https://github.com/your-github-username/Operation_Planning_and_Control-projects.git
+   url = https://github.com/himgauripradeep/Operation_Planning_and_Control-projects.git
 
 [submodule "supplychain-projects"]
    path = supplychain-projects
-   url = https://github.com/your-github-username/supplychain-projects.git
+   url = https://github.com/himgauripradeep/supplychain-projects.git
 
 [submodule "financialeconomicanalysis-projects"]
    path = financialeconomicanalysis-projects
-   url = https://github.com/your-github-username/financialeconomicanalysis-projects.git
+   url = https://github.com/himgauripradeep/financialeconomicanalysis-projects.git
 
 [submodule "sixsigma-projects"]
    path = sixsigma-projects
-   url = https://github.com/your-github-username/sixsigma-projects.git
+   url = https://github.com/himgauripradeep/sixsigma-projects.git
