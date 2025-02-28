@@ -1,6 +1,6 @@
-[submodule "Operation_Planning_and_Control-projects"]
-   path = Operation_Planning_and_Control-projects
-   url = https://himgauripradeep.github.io/Operation_Planning_and_Control.git
+[submodule "Operation_Planning_and_Control"]
+   path = Operation_Planning_and_Control
+   url = https://himgauripradeep.github.io/Operation_Planning_and_Control
 
 [submodule "supplychain-projects"]
    path = supplychain-projects
