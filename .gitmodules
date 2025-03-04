@@ -13,3 +13,7 @@
 [submodule "sixsigma-projects"]
    path = sixsigma-projects
    url = https://github.com/himgauripradeep/sixsigma-projects.git
+
+[submodule "AI-Projects"]
+   path = AI-Projects
+   url = https://himgauripradeep.github.io/Operation_Planning_and_Control
