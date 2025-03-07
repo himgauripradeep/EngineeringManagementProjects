@@ -13,49 +13,49 @@
             background-color: #f4f4f4;
             color: #333;
             line-height: 1.6;
+            display: flex; /* Use flexbox for overall layout */
+            justify-content: center;
         }
 
         .container {
-            width: 80%;
-            max-width: 1200px;
-            margin: 50px auto;
+            width: 800px; /* Set a fixed width */
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
             display: grid;
-            grid-template-columns: 350px 1fr; /* Left pane 350px, right pane remaining */
+            grid-template-columns: 1fr 2fr; /* Left and right columns */
             grid-gap: 20px;
         }
 
         .left-pane {
-            text-align: center;
+            text-align: left;
         }
 
         .left-pane img {
-            width: 250px;
-            height: 250px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
             object-fit: cover;
             margin-bottom: 20px;
         }
 
         .skills, .certifications {
-            margin-bottom: 30px;
-            text-align: left; /* Align text left in skills and certifications */
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
+            margin-bottom: 20px;
         }
 
         .skills ul, .certifications ul {
+            list-style: none;
+            padding: 0;
             display: flex;
             flex-wrap: wrap;
         }
 
         .skills li, .certifications li {
-            background-color: #d1e0e0;
-            padding: 8px 15px;
+            background-color: #e0e0e0;
+            padding: 5px 10px;
             margin: 5px;
-            border-radius: 20px;
+            border-radius: 15px;
+            font-size: 0.85em; /* Reduced font size */
         }
 
         .right-pane {
@@ -72,40 +72,41 @@
 
         .projects {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start; /* Align projects to the left */
             flex-wrap: wrap;
-            margin-top: 30px;
         }
 
         .project-card {
-            width: 300px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin: 20px;
+            width: 180px; /* Reduced width */
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px;
             overflow: hidden;
             text-align: center;
         }
 
         .project-card img {
             width: 100%;
-            height: 200px;
+            height: 100px; /* Reduced height */
             object-fit: cover;
         }
 
         .project-card h3 {
-            padding: 15px;
+            padding: 10px;
             margin: 0;
+            font-size: 0.9em; /* Reduced font size */
         }
 
         .project-card a {
             display: inline-block;
             background-color: #007bff;
             color: white;
-            padding: 10px 20px;
+            padding: 5px 10px;
             text-decoration: none;
-            border-radius: 5px;
-            margin-bottom: 20px;
+            border-radius: 3px;
+            margin-bottom: 10px;
+            font-size: 0.8em; /* Reduced font size */
         }
 
         .project-card a:hover {
@@ -117,15 +118,51 @@
             margin-top: 30px;
             text-align: center;
             color: #777;
+            font-size: 0.8em; /* Reduced font size */
         }
+
+        /* Add styling for the work experience section */
+        .experience li div {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        .experience li div:last-child {
+            border-bottom: none;
+        }
+
+        .experience h3, .education h3 {
+            font-size: 1em; /* Reduced font size */
+            margin-bottom: 5px;
+        }
+
+        .experience p, .education p {
+            font-size: 0.9em; /* Reduced font size */
+            margin-bottom: 5px;
+        }
+
+        .experience ul ul {
+            margin-top: 5px;
+            padding-left: 20px;
+        }
+
+        .experience ul ul li {
+            font-size: 0.85em; /* Reduced font size */
+        }
+
+        .experience ul ul li b {
+            font-weight: bold;
+        }
+
     </style>
 </head>
 <body>
     <div class="container">
         <div class="left-pane">
-            <img src="assets/images/himgauri.png" alt="Your Photo">
+            <img src="assets/images/your-photo.jpg" alt="Your Photo">
             <h1>Himgauri Pradeep Khaladkar</h1>
-            <p>Driven Product Manager and Data Enthusiast with a Master's in Engineering Management and a strong technical background. I excel in leveraging data insights to drive product strategy and optimize processes. My experience spans data analysis, machine learning, cloud computing, and agile product development. I am passionate about creating innovative solutions that solve real-world problems.</p>
+            <p>Driven Product Manager and Data Enthusiast with a Master's in Engineering Management and a strong technical background. Experienced in leveraging data insights to drive product strategy and improve processes. Skilled in SQL, Python, Agile methodologies, and more. Certified in PMP, CSM, AWS Cloud Practitioner, Tableau, and Lean Six Sigma.</p>
 
             <div class="skills">
                 <h2>Key Skills</h2>
@@ -168,100 +205,65 @@
             </div>
 
             <div class="experience">
-    <h2>Work Experience</h2>
-    <ul>
-        <li>
-            <div style="border-bottom: 1px solid #ddd; padding-bottom: 15px; margin-bottom: 20px;">
-                <h3>Graduate Assistant (Teaching & Research)</h3>
-                <p><strong>San Jose State University, San Jose, CA</strong> | Apr 2024 - Present</p>
+                <h2>Work Experience</h2>
                 <ul>
                     <li>
-                        <b>Conducted</b> in-depth statistical data analysis and research, <b>supporting</b> key AI ecosystem projects.
+                        <div>
+                            <h3>Graduate Assistant (Teaching & Research)</h3>
+                            <p><strong>San Jose State University, San Jose, CA</strong> | Apr 2024 - Present</p>
+                            <ul>
+                                <li><b>Conducted</b> in-depth statistical data analysis and research, <b>supporting</b> key AI ecosystem projects.</li>
+                                <li><b>Coordinated</b> project schedules and task details, <b>ensuring</b> on-time and within-budget project completion.</li>
+                                <li><b>Developed</b> strategic AI Product Roadmaps incorporating Gen AI functionalities, <b>aligning</b> with overall product and strategic objectives.</li>
+                                <li><b>Utilized skills:</b> Statistical Analysis, Project Coordination, Product Roadmap Development.</li>
+                            </ul>
+                        </div>
                     </li>
                     <li>
-                        <b>Coordinated</b> project schedules and task details, <b>ensuring</b> on-time and within-budget project completion.
+                        <div>
+                            <h3>Product Analyst / Product Manager Intern</h3>
+                            <p><strong>Affinity Solutions, San Jose, CA</strong> | Jun 2024 - Dec 2024</p>
+                            <ul>
+                                <li><b>Crafted</b> interactive Tableau dashboards using SQL and Tableau, integrated with AWS Redshift, <b>enhancing</b> data visibility by 30% and <b>providing</b> key insights for product strategy and financial trends.</li>
+                                <li><b>Led</b> the Data Quality Tiers Tagging Project, <b>categorizing</b> transaction data for enhanced analytics.</li>
+                                <li><b>Orchestrated</b> Python-based automation and tooling for financial data evaluation within an Agile framework, <b>reducing</b> manual effort by 40% and <b>improving</b> operational efficiency.
+                                </li>
+                                <li><b>Conducted</b> SQL-based analysis of 0.1M+ consumer transactions and user research, <b>identifying</b> spending trends that optimized marketing strategies and increased campaign effectiveness.</li>
+                                <li><b>Spearheaded</b> modifications to existing APIs, <b>resulting</b> in a 30% increase in integration efficiency across major software platforms within six months.</li>
+                                <li><b>Performed</b> competitive analysis of key SaaS offerings, <b>identifying</b> market trends and opportunities for product differentiation.</li>
+                                <li><b>Utilized Skills:</b> SQL, Tableau, Python, Agile, Competitive Analysis, Data Analysis.</li>
+                            </ul>
+                        </div>
                     </li>
                     <li>
-                        <b>Developed</b> strategic AI Product Roadmaps incorporating Gen AI functionalities, <b>aligning</b> with overall product and strategic objectives.
+                        <div>
+                            <h3>Data Engineer</h3>
+                            <p><strong>IBM, Pune, India</strong> | Aug 2020 - Dec 2022</p>
+                            <ul>
+                                <li><b>Designed and implemented</b> a cloud-based content management system on IBM Cloud, <b>reducing</b> average processing time by 66%.</li>
+                                <li><b>Developed</b> automation scripts using NLP and text analytics, <b>achieving</b> an 83% reduction in turnaround time for access provisioning.</li>
+                                <li><b>Led</b> secure migration of 0.1 million documents with encryption and compliance measures.</li>
+                                <li><b>Executed</b> comprehensive analysis of existing products, <b>reducing</b> time-to-market by three weeks through facilitated workshops and enhancements.</li>
+                                <li><b>Performed</b> in-depth examination of B2B IAM operations, <b>driving</b> enhancements to system reliability.</li>
+                                <li><b>Utilized Skills:</b> Cloud Computing (IBM Cloud), NLP, Data Migration, Project Analysis.</li>
+                            </ul>
+                        </div>
                     </li>
-                    <li><b>Utilized skills:</b> Statistical Analysis, Project Coordination, Product Roadmap Development.</li>
+                    <li>
+                        <div>
+                            <h3>Programmer Analyst</h3>
+                            <p><strong>Cognizant Technology Solutions, Pune, India</strong> | Dec 2016 - Aug 2020</p>
+                            <ul>
+                                <li><b>Led</b> product discovery and requirements gathering sessions with banking and healthcare clients, <b>resulting</b> in a 25% reduction in processing time.</li>
+                                <li><b>Developed</b> detailed product specifications and user stories.</li>
+                                <li><b>Automated</b> data workflows, <b>reducing</b> document processing time by 30%.</li>
+                                <li><b>Led</b> Agile-driven enhancements in data processing and storage optimization, <b>improving</b> system efficiency by 25%.</li>
+                                <li><b>Utilized Skills:</b> Product Discovery, Agile, Data Automation, Requirements Gathering.</li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
             </div>
-        </li>
-        <li>
-            <div style="border-bottom: 1px solid #ddd; padding-bottom: 15px; margin-bottom: 20px;">
-                <h3>Product Analyst / Product Manager Intern</h3>
-                <p><strong>Affinity Solutions, San Jose, CA</strong> | Jun 2024 - Dec 2024</p>
-                <ul>
-                    <li>
-                        <b>Crafted</b> interactive Tableau dashboards using SQL and Tableau, integrated with AWS Redshift, <b>enhancing</b> data visibility by 30% and <b>providing</b> key insights for product strategy and financial trends.
-                    </li>
-                    <li>
-                        <b>Led</b> the Data Quality Tiers Tagging Project, <b>categorizing</b> transaction data for enhanced analytics.
-                    </li>
-                    <li>
-                        <b>Orchestrated</b> Python-based automation and tooling for financial data evaluation within an Agile framework, <b>reducing</b> manual effort by 40% and <b>improving</b> operational efficiency.
-                    </li>
-                    <li>
-                        <b>Conducted</b> SQL-based analysis of 0.1M+ consumer transactions and user research, <b>identifying</b> spending trends that optimized marketing strategies and increased campaign effectiveness.
-                    </li>
-                    <li>
-                        <b>Spearheaded</b> modifications to existing APIs, <b>resulting</b> in a 30% increase in integration efficiency across major software platforms within six months.
-                    </li>
-                    <li>
-                        <b>Performed</b> competitive analysis of key SaaS offerings, <b>identifying</b> market trends and opportunities for product differentiation.
-                    </li>
-                    <li><b>Utilized Skills:</b> SQL, Tableau, Python, Agile, Competitive Analysis, Data Analysis.</li>
-                </ul>
-            </div>
-        </li>
-        <li>
-            <div style="border-bottom: 1px solid #ddd; padding-bottom: 15px; margin-bottom: 20px;">
-                <h3>Data Engineer</h3>
-                <p><strong>IBM, Pune, India</strong> | Aug 2020 - Dec 2022</p>
-                <ul>
-                    <li>
-                        <b>Designed and implemented</b> a cloud-based content management system on IBM Cloud, <b>reducing</b> average processing time by 66%.
-                    </li>
-                    <li>
-                        <b>Developed</b> automation scripts using NLP and text analytics, <b>achieving</b> an 83% reduction in turnaround time for access provisioning.
-                    </li>
-                    <li>
-                        <b>Led</b> secure migration of 0.1 million documents with encryption and compliance measures.
-                    </li>
-                    <li>
-                        <b>Executed</b> comprehensive analysis of existing products, <b>reducing</b> time-to-market by three weeks through facilitated workshops and enhancements.
-                    </li>
-                    <li>
-                        <b>Performed</b> in-depth examination of B2B IAM operations, <b>driving</b> enhancements to system reliability.
-                    </li>
-                    <li><b>Utilized Skills:</b> Cloud Computing (IBM Cloud), NLP, Data Migration, Project Analysis.</li>
-                </ul>
-            </div>
-        </li>
-        <li>
-            <div style="border-bottom: 1px solid #ddd; padding-bottom: 15px; margin-bottom: 20px;">
-                <h3>Programmer Analyst</h3>
-                <p><strong>Cognizant Technology Solutions, Pune, India</strong> | Dec 2016 - Aug 2020</p>
-                <ul>
-                    <li>
-                        <b>Led</b> product discovery and requirements gathering sessions with banking and healthcare clients, <b>resulting</b> in a 25% reduction in processing time.
-                    </li>
-                    <li>
-                        <b>Developed</b> detailed product specifications and user stories.
-                    </li>
-                    <li>
-                        <b>Automated</b> data workflows, <b>reducing</b> document processing time by 30%.
-                    </li>
-                    <li>
-                        <b>Led</b> Agile-driven enhancements in data processing and storage optimization, <b>improving</b> system efficiency by 25%.
-                    </li>
-                    <li><b>Utilized Skills:</b> Product Discovery, Agile, Data Automation, Requirements Gathering.</li>
-                </ul>
-            </div>
-        </li>
-    </ul>
-</div>
 
             <div class="projects">
                 <h2>Projects</h2>
