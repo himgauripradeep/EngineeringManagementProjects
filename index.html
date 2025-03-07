@@ -23,20 +23,44 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             padding: 30px;
             display: grid;
+            grid-template-rows: auto 1fr; /* Top pane auto height, rest 1fr */
+            grid-gap: 20px;
+        }
+
+        .top-pane {
+            grid-column: 1 / 3; /* Span both columns */
+            text-align: center;
+        }
+
+        .top-pane img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .top-pane h1 {
+            margin-bottom: 10px; /* Reduced margin */
+        }
+
+        .top-pane .contact {
+            margin-bottom: 20px;
+        }
+
+        .top-pane .contact p {
+            margin: 5px 0; /* Reduced margin */
+            font-size: 0.9em;
+        }
+
+        .content-pane {
+            display: grid;
             grid-template-columns: 1fr 2fr; /* Left and right columns */
             grid-gap: 20px;
         }
 
         .left-pane {
             text-align: left;
-        }
-
-        .left-pane img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 20px;
         }
 
         .skills, .certifications {
@@ -154,144 +178,153 @@
         .experience ul ul li b {
             font-weight: bold;
         }
-
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="left-pane">
-            <img src="assets/images/your-photo.jpg" alt="Your Photo">
+        <div class="top-pane">
+            <img src="assets/images/himgauri.png" alt="Your Photo">
             <h1>Himgauri Pradeep Khaladkar</h1>
-            <p>Driven Product Manager and Data Enthusiast with a Master's in Engineering Management and a strong technical background. Experienced in leveraging data insights to drive product strategy and improve processes. Skilled in SQL, Python, Agile methodologies, and more. Certified in PMP, CSM, AWS Cloud Practitioner, Tableau, and Lean Six Sigma.</p>
 
-            <div class="skills">
-                <h2>Key Skills</h2>
-                <ul>
-                    <li>Data Analysis & Visualization (SQL, Python, Tableau, Power BI)</li>
-                    <li>Machine Learning & Predictive Modeling (AI, Logistic Regression)</li>
-                    <li>Cloud & Databases (AWS, Azure, Redshift, Snowflake)</li>
-                    <li>Product Management (Agile, Scrum, Roadmapping, Go-to-Market)</li>
-                    <li>Project Management (PMP, Six Sigma)</li>
-                    <li>Automation & Development (Python Scripting, Workflow Optimization)</li>
-                </ul>
+            <div class="contact">
+                <p>[Your Phone Number]</p>
+                <p>[Your Email Address]</p>
+                <p>[Your Address]</p>
             </div>
 
-            <div class="certifications">
-                <h2>Certifications</h2>
-                <ul>
-                    <li>PMP</li>
-                    <li>Certified Scrum Master</li>
-                    <li>AWS Cloud Practitioner</li>
-                    <li>Tableau Certified</li>
-                    <li>Lean Six Sigma Green Belt</li>
-                </ul>
-            </div>
+            <p>Driven Product Manager and Data Enthusiast with a Master's in Engineering Management and a strong technical background. I excel in leveraging data insights to drive product strategy and optimize processes. My experience spans data analysis, machine learning, cloud computing, and agile product development. I am passionate about creating innovative solutions that solve real-world problems.</p>
         </div>
 
-        <div class="right-pane">
-            <div class="education">
-                <h2>Education</h2>
-                <ul>
-                    <li>
-                        <h3>San Jose State University, San Jose, CA (Jan 2023 – May 2025)</h3>
-                        <p>Master’s degree in Engineering Management | GPA: 3.8</p>
-                        <p>Coursework: Supply Chain Management, Managing Product Development, Project Management, Data Analytics, Statistical Analysis, Computer Science, Data Science, and Information Systems.</p>
-                    </li>
-                    <li>
-                        <h3>University of Pune, Pune, MH (Jun 2012 – Jun 2016)</h3>
-                        <p>Bachelor’s degree in Computer Science | GPA: 3.5</p>
-                    </li>
-                </ul>
+        <div class="content-pane">
+            <div class="left-pane">
+                <div class="skills">
+                    <h2>Key Skills</h2>
+                    <ul>
+                        <li>Data Analysis & Visualization (SQL, Python, Tableau, Power BI)</li>
+                        <li>Machine Learning & Predictive Modeling (AI, Logistic Regression)</li>
+                        <li>Cloud & Databases (AWS, Azure, Redshift, Snowflake)</li>
+                        <li>Product Management (Agile, Scrum, Roadmapping, Go-to-Market)</li>
+                        <li>Project Management (PMP, Six Sigma)</li>
+                        <li>Automation & Development (Python Scripting, Workflow Optimization)</li>
+                    </ul>
+                </div>
+
+                <div class="certifications">
+                    <h2>Certifications</h2>
+                    <ul>
+                        <li>PMP</li>
+                        <li>Certified Scrum Master</li>
+                        <li>AWS Cloud Practitioner</li>
+                        <li>Tableau Certified</li>
+                        <li>Lean Six Sigma Green Belt</li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="experience">
-                <h2>Work Experience</h2>
-                <ul>
-                    <li>
-                        <div>
-                            <h3>Graduate Assistant (Teaching & Research)</h3>
-                            <p><strong>San Jose State University, San Jose, CA</strong> | Apr 2024 - Present</p>
-                            <ul>
-                                <li><b>Conducted</b> in-depth statistical data analysis and research, <b>supporting</b> key AI ecosystem projects.</li>
-                                <li><b>Coordinated</b> project schedules and task details, <b>ensuring</b> on-time and within-budget project completion.</li>
-                                <li><b>Developed</b> strategic AI Product Roadmaps incorporating Gen AI functionalities, <b>aligning</b> with overall product and strategic objectives.</li>
-                                <li><b>Utilized skills:</b> Statistical Analysis, Project Coordination, Product Roadmap Development.</li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <h3>Product Analyst / Product Manager Intern</h3>
-                            <p><strong>Affinity Solutions, San Jose, CA</strong> | Jun 2024 - Dec 2024</p>
-                            <ul>
-                                <li><b>Crafted</b> interactive Tableau dashboards using SQL and Tableau, integrated with AWS Redshift, <b>enhancing</b> data visibility by 30% and <b>providing</b> key insights for product strategy and financial trends.</li>
-                                <li><b>Led</b> the Data Quality Tiers Tagging Project, <b>categorizing</b> transaction data for enhanced analytics.</li>
-                                <li><b>Orchestrated</b> Python-based automation and tooling for financial data evaluation within an Agile framework, <b>reducing</b> manual effort by 40% and <b>improving</b> operational efficiency.
-                                </li>
-                                <li><b>Conducted</b> SQL-based analysis of 0.1M+ consumer transactions and user research, <b>identifying</b> spending trends that optimized marketing strategies and increased campaign effectiveness.</li>
-                                <li><b>Spearheaded</b> modifications to existing APIs, <b>resulting</b> in a 30% increase in integration efficiency across major software platforms within six months.</li>
-                                <li><b>Performed</b> competitive analysis of key SaaS offerings, <b>identifying</b> market trends and opportunities for product differentiation.</li>
-                                <li><b>Utilized Skills:</b> SQL, Tableau, Python, Agile, Competitive Analysis, Data Analysis.</li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <h3>Data Engineer</h3>
-                            <p><strong>IBM, Pune, India</strong> | Aug 2020 - Dec 2022</p>
-                            <ul>
-                                <li><b>Designed and implemented</b> a cloud-based content management system on IBM Cloud, <b>reducing</b> average processing time by 66%.</li>
-                                <li><b>Developed</b> automation scripts using NLP and text analytics, <b>achieving</b> an 83% reduction in turnaround time for access provisioning.</li>
-                                <li><b>Led</b> secure migration of 0.1 million documents with encryption and compliance measures.</li>
-                                <li><b>Executed</b> comprehensive analysis of existing products, <b>reducing</b> time-to-market by three weeks through facilitated workshops and enhancements.</li>
-                                <li><b>Performed</b> in-depth examination of B2B IAM operations, <b>driving</b> enhancements to system reliability.</li>
-                                <li><b>Utilized Skills:</b> Cloud Computing (IBM Cloud), NLP, Data Migration, Project Analysis.</li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <h3>Programmer Analyst</h3>
-                            <p><strong>Cognizant Technology Solutions, Pune, India</strong> | Dec 2016 - Aug 2020</p>
-                            <ul>
-                                <li><b>Led</b> product discovery and requirements gathering sessions with banking and healthcare clients, <b>resulting</b> in a 25% reduction in processing time.</li>
-                                <li><b>Developed</b> detailed product specifications and user stories.</li>
-                                <li><b>Automated</b> data workflows, <b>reducing</b> document processing time by 30%.</li>
-                                <li><b>Led</b> Agile-driven enhancements in data processing and storage optimization, <b>improving</b> system efficiency by 25%.</li>
-                                <li><b>Utilized Skills:</b> Product Discovery, Agile, Data Automation, Requirements Gathering.</li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+            <div class="right-pane">
+                <div class="education">
+                    <h2>Education</h2>
+                    <ul>
+                        <li>
+                            <h3>San Jose State University, San Jose, CA (Jan 2023 – May 2025)</h3>
+                            <p>Master’s degree in Engineering Management | GPA: 3.8</p>
+                            <p>Coursework: Supply Chain Management, Managing Product Development, Project Management, Data Analytics, Statistical Analysis, Computer Science, Data Science, and Information Systems.</p>
+                        </li>
+                        <li>
+                            <h3>University of Pune, Pune, MH (Jun 2012 – Jun 2016)</h3>
+                            <p>Bachelor’s degree in Computer Science | GPA: 3.5</p>
+                        </li>
+                    </ul>
+                </div>
 
-            <div class="projects">
-                <h2>Projects</h2>
+                <div class="experience">
+                    <h2>Work Experience</h2>
+                    <ul>
+                        <li>
+                            <div>
+                                <h3>Graduate Assistant (Teaching & Research)</h3>
+                                <p><strong>San Jose State University, San Jose, CA</strong> | Apr 2024 - Present</p>
+                                <ul>
+                                    <li><b>Conducted</b> in-depth statistical data analysis and research, <b>supporting</b> key AI ecosystem projects.</li>
+                                    <li><b>Coordinated</b> project schedules and task details, <b>ensuring</b> on-time and within-budget project completion.</li>
+                                    <li><b>Developed</b> strategic AI Product Roadmaps incorporating Gen AI functionalities, <b>aligning</b> with overall product and strategic objectives.</li>
+                                    <li><b>Utilized skills:</b> Statistical Analysis, Project Coordination, Product Roadmap Development.</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h3>Product Analyst / Product Manager Intern</h3>
+                                <p><strong>Affinity Solutions, San Jose, CA</strong> | Jun 2024 - Dec 2024</p>
+                                <ul>
+                                    <li><b>Crafted</b> interactive Tableau dashboards using SQL and Tableau, integrated with AWS Redshift, <b>enhancing</b> data visibility by 30% and <b>providing</b> key insights for product strategy and financial trends.</li>
+                                    <li><b>Led</b> the Data Quality Tiers Tagging Project, <b>categorizing</b> transaction data for enhanced analytics.</li>
+                                    <li><b>Orchestrated</b> Python-based automation and tooling for financial data evaluation within an Agile framework, <b>reducing</b> manual effort by 40% and <b>improving</b> operational efficiency.</li>
+                                    <li><b>Conducted</b> SQL-based analysis of 0.1M+ consumer transactions and user research, <b>identifying</b> spending trends that optimized marketing strategies and increased campaign effectiveness.</li>
+                                    <li><b>Spearheaded</b> modifications to existing APIs, <b>resulting</b> in a 30% increase in integration efficiency across major software platforms within six months.</li>
+                                    <li><b>Performed</b> competitive analysis of key SaaS offerings, <b>identifying</b> market trends and opportunities for product differentiation.</li>
+                                    <li><b>Utilized Skills:</b> SQL, Tableau, Python, Agile, Competitive Analysis, Data Analysis.</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h3>Data Engineer</h3>
+                                <p><strong>IBM, Pune, India</strong> | Aug 2020 - Dec 2022</p>
+                                <ul>
+                                    <li><b>Designed and implemented</b> a cloud-based content management system on IBM Cloud, <b>reducing</b> average processing time by 66%.</li>
+                                    <li><b>Developed</b> automation scripts using NLP and text analytics, <b>achieving</b> an 83% reduction in turnaround time for access provisioning.</li>
+                                    <li><b>Led</b> secure migration of 0.1 million documents with encryption and compliance measures.</li>
+                                    <li><b>Executed</b> comprehensive analysis of existing products, <b>reducing</b> time-to-market by three weeks through facilitated workshops and enhancements.</li>
+                                    <li><b>Performed</b> in-depth examination of B2B IAM operations, <b>driving</b> enhancements to system reliability.</li>
+                                    <li><b>Utilized Skills:</b> Cloud Computing (IBM Cloud), NLP, Data Migration, Project Analysis.</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h3>Programmer Analyst</h3>
+                                <p><strong>Cognizant Technology Solutions, Pune, India</strong> | Dec 2016 - Aug 2020</p>
+                                <ul>
+                                    <li><b>Led</b> product discovery and requirements gathering sessions with banking and healthcare clients, <b>resulting</b> in a 25% reduction in processing time.</li>
+                                    <li><b>Developed</b> detailed product specifications and user stories.</li>
+                                    <li><b>Automated</b> data workflows, <b>reducing</b> document processing time by 30%.</li>
+                                    <li><b>Led</b> Agile-driven enhancements in data processing and storage optimization, <b>improving</b> system efficiency by 25%.</li>
+                                    <li><b>Utilized Skills:</b> Product Discovery, Agile, Data Automation, Requirements Gathering.</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
                 <div class="projects">
-                    <div class="project-card">
-                        <img src="assets/images/operations_planning.png" alt="Operations Planning & Control">
-                        <h3>Operations Planning & Control</h3>
-                        <a href="https://himgauripradeep.github.io/Operation_Planning_and_Control/" target="_blank">View Project</a>
-                    </div>
-                    <div class="project-card">
-                        <img src="assets/images/supply_chain.png" alt="Supply Chain Projects">
-                        <h3>Supply Chain Projects</h3>
-                        <a href="https://himgauripradeep.github.io/supplychain-projects/" target="_blank">View Project</a>
-                    </div>
-                    <div class="project-card">
-                        <img src="assets/images/finance.png" alt="Financial & Economic Analysis">
-                        <h3>Financial & Economic Analysis</h3>
-                        <a href="https://himgauripradeep.github.io/financialeconomicanalysis-projects/" target="_blank">View Project</a>
-                    </div>
-                    <div class="project-card">
-                        <img src="assets/images/six_sigma.png" alt="Six Sigma Projects">
-                        <h3>Six Sigma Projects</h3>
-                        <a href="https://himgauripradeep.github.io/sixsigma-projects/" target="_blank">View Project</a>
-                    </div>
-                    <div class="project-card">
-                        <img src="assets/images/AI.png" alt="AI Projects">
-                        <h3>AI Projects</h3>
-                        <a href="https://himgauripradeep.github.io/AI-Projects/" target="_blank">View Project</a>
+                    <h2>Projects</h2>
+                    <div class="projects">
+                        <div class="project-card">
+                            <img src="assets/images/operations_planning.png" alt="Operations Planning & Control">
+                            <h3>Operations Planning & Control</h3>
+                            <a href="https://himgauripradeep.github.io/Operation_Planning_and_Control/" target="_blank">View Project</a>
+                        </div>
+                        <div class="project-card">
+                            <img src="assets/images/supply_chain.png" alt="Supply Chain Projects">
+                            <h3>Supply Chain Projects</h3>
+                            <a href="https://himgauripradeep.github.io/supplychain-projects/" target="_blank">View Project</a>
+                        </div>
+                        <div class="project-card">
+                            <img src="assets/images/finance.png" alt="Financial & Economic Analysis">
+                            <h3>Financial & Economic Analysis</h3>
+                            <a href="https://himgauripradeep.github.io/financialeconomicanalysis-projects/" target="_blank">View Project</a>
+                        </div>
+                        <div class="project-card">
+                            <img src="assets/images/six_sigma.png" alt="Six Sigma Projects">
+                            <h3>Six Sigma Projects</h3>
+                            <a href="https://himgauripradeep.github.io/sixsigma-projects/" target="_blank">View Project</a>
+                        </div>
+                        <div class="project-card">
+                            <img src="assets/images/AI.png" alt="AI Projects">
+                            <h3>AI Projects</h3>
+                            <a href="https://himgauripradeep.github.io/AI-Projects/" target="_blank">View Project</a>
+                        </div>
                     </div>
                 </div>
             </div>
