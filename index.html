@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +24,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             padding: 30px;
             display: grid;
-            grid-template-rows: auto 1fr; /* Top pane auto height, rest 1fr */
+            grid-template-rows: auto 1fr auto; /* Top pane auto height, middle 1fr, projects auto */
             grid-gap: 20px;
         }
 
@@ -94,12 +95,12 @@
             margin-bottom: 5px;
         }
 
-    .projects {
-      display: flex;
-      justify-content: center;
-      /* Align projects to the center */
-      flex-wrap: wrap;
-    }
+        .projects {
+            display: flex;
+            justify-content: center; /* Align projects to the center */
+            flex-wrap: wrap;
+            grid-column: 1 / 3; /* Span across both columns */
+        }
 
         .project-card {
             width: 180px; /* Reduced width */
@@ -188,12 +189,12 @@
             <h1>Himgauri Pradeep Khaladkar</h1>
 
             <div class="contact">
-                <p>[Your Phone Number]</p>
-                <p>[Your Email Address]</p>
-                <p>[Your Address]</p>
+                <p>himgaurikhaladkar@gmail.com</p>
+                <p>San Jose, CA</p>
             </div>
 
-            <p>Driven Product Manager and Data Enthusiast with a Master's in Engineering Management and a strong technical background. I excel in leveraging data insights to drive product strategy and optimize processes. My experience spans data analysis, machine learning, cloud computing, and agile product development. I am passionate about creating innovative solutions that solve real-world problems.</p>
+            <p>Driven Product Manager and Data Enthusiast with a Master's in Engineering Management and a strong technical background. Experienced in leveraging data insights to drive product strategy and improve processes. Skilled in SQL, Python, Agile methodologies, and more. Certified in PMP, CSM, AWS Cloud Practitioner, Tableau, and Lean Six Sigma.
+</p>
         </div>
 
         <div class="content-pane">
@@ -297,41 +298,40 @@
                         </li>
                     </ul>
                 </div>
-
-                
-                
             </div>
         </div>
-<div class="projects">
-                    <h2>Projects</h2>
-                    <div class="projects">
-                        <div class="project-card">
-                            <img src="assets/images/operations_planning.png" alt="Operations Planning & Control">
-                            <h3>Operations Planning & Control</h3>
-                            <a href="https://himgauripradeep.github.io/Operation_Planning_and_Control/" target="_blank">View Project</a>
-                        </div>
-                        <div class="project-card">
-                            <img src="assets/images/supply_chain.png" alt="Supply Chain Projects">
-                            <h3>Supply Chain Projects</h3>
-                            <a href="https://himgauripradeep.github.io/supplychain-projects/" target="_blank">View Project</a>
-                        </div>
-                        <div class="project-card">
-                            <img src="assets/images/finance.png" alt="Financial & Economic Analysis">
-                            <h3>Financial & Economic Analysis</h3>
-                            <a href="https://himgauripradeep.github.io/financialeconomicanalysis-projects/" target="_blank">View Project</a>
-                        </div>
-                        <div class="project-card">
-                            <img src="assets/images/six_sigma.png" alt="Six Sigma Projects">
-                            <h3>Six Sigma Projects</h3>
-                            <a href="https://himgauripradeep.github.io/sixsigma-projects/" target="_blank">View Project</a>
-                        </div>
-                        <div class="project-card">
-                            <img src="assets/images/AI.png" alt="AI Projects">
-                            <h3>AI Projects</h3>
-                            <a href="https://himgauripradeep.github.io/AI-Projects/" target="_blank">View Project</a>
-                        </div>
-                    </div>
-    </div>
+
+        <div class="projects">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <img src="assets/images/operations_planning.png" alt="Operations Planning & Control">
+                    <h3>Operations Planning & Control</h3>
+                    <a href="https://himgauripradeep.github.io/Operation_Planning_and_Control/" target="_blank">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="assets/images/supply_chain.png" alt="Supply Chain Projects">
+                    <h3>Supply Chain Projects</h3>
+                    <a href="https://himgauripradeep.github.io/supplychain-projects/" target="_blank">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="assets/images/finance.png" alt="Financial & Economic Analysis">
+                    <h3>Financial & Economic Analysis</h3>
+                    <a href="https://himgauripradeep.github.io/financialeconomicanalysis-projects/" target="_blank">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="assets/images/six_sigma.png" alt="Six Sigma Projects">
+                    <h3>Six Sigma Projects</h3>
+                    <a href="https://himgauripradeep.github.io/sixsigma-projects/" target="_blank">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="assets/images/AI.png" alt="AI Projects">
+                    <h3>AI Projects</h3>
+                    <a href="https://himgauripradeep.github.io/AI-Projects/" target="_blank">View Project</a>
+                </div>
+            </div>
+        </div>
+
         <footer class="footer">
             <p>&copy; 2025, Himgauri Pradeep Khaladkar. All rights reserved.</p>
         </footer>
