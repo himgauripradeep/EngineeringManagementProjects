@@ -1,0 +1,14 @@
+- title: "Amazon Supply Chain Analysis"
+  description: "Analyzed Amazon’s supply chain strategy and designed an optimized model."
+  image: "assets/img/amazon-project.png"
+  url: "https://himgauripradeep.github.io/supplychain-projects/"
+
+- title: "Fill Rate Optimization at Affinity Solutions"
+  description: "Optimized fill rates using analytics on financial institution data."
+  image: "assets/img/fill-rate.png"
+  url: "https://himgauripradeep.github.io/AI-Projects/"
+
+- title: "Six Sigma Process Improvement"
+  description: "Enhanced manufacturing and testing for server assembly to minimize risks."
+  image: "assets/img/sixsigma.png"
+  url: "https://himgauripradeep.github.io/sixsigma-projects/"
