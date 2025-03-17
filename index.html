@@ -1,0 +1,25 @@
+---
+layout: home
+title: "Welcome"
+pagination: true
+---
+
+<h1>Welcome to My Portfolio</h1>
+
+<p>Hi, I'm <strong>Himgauri Pradeep Khaladkar</strong>, a Product Manager and Data Enthusiast.</p>
+
+<!-- Portfolio Section -->
+{% include projects.html %}
+
+<!-- Pagination -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="prev">&laquo; Previous</a>
+  {% endif %}
+
+  <span>Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next &raquo;</a>
+  {% endif %}
+</div>
